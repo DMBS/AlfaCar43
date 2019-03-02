@@ -13,6 +13,11 @@ namespace AlfaCar43Project.Controllers
             return View();
         }
 
+        public ActionResult Services()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             return RedirectToAction("Index");
