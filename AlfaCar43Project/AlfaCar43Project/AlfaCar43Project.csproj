@@ -165,6 +165,14 @@
     <Content Include="Content\Images\carousel\маляр1.jpg" />
     <Content Include="Content\Images\carousel\пассат1.jpg" />
     <Content Include="Content\Images\carousel\пассат2.jpg" />
+    <Content Include="Content\Images\clients\1.jpg" />
+    <Content Include="Content\Images\clients\2.jpg" />
+    <Content Include="Content\Images\clients\3.jpg" />
+    <Content Include="Content\Images\clients\4.jpg" />
+    <Content Include="Content\Images\clients\5.jpg" />
+    <Content Include="Content\Images\clients\6.jpg" />
+    <Content Include="Content\Images\clients\7.jpg" />
+    <Content Include="Content\Images\clients\8.jpg" />
     <Content Include="Content\Images\header-bg.jpg" />
     <Content Include="Content\Images\logos\creative-market.jpg" />
     <Content Include="Content\Images\logos\designmodo.jpg" />
