@@ -6088,6 +6088,8 @@ a.close.disabled {
 
 .carousel {
   position: relative;
+  width:800px;
+  height:600px;
 }
 
 .carousel.pointer-event {

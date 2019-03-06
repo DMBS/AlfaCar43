@@ -22,3 +22,6 @@
         position: relative;
         z-index: 1;
     }
+.carousel-border {
+    margin: 5px;
+}
