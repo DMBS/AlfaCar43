@@ -174,7 +174,7 @@
     <Content Include="Content\Images\header-bg.jpg" />
     <Content Include="Content\Images\icons\YellowStart.png" />
     <Content Include="Content\Images\main\AlfaCar_MainImage.jpg" />
-    <Content Include="Content\Images\main\main_image.jpg" />
+    <Content Include="Content\Images\main\black-paint.png" />
     <Content Include="Content\Images\map-image.png" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome\css\all.css" />
