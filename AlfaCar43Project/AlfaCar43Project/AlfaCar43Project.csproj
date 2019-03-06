@@ -135,6 +135,7 @@
   <ItemGroup>
     <Content Include="Content\agency.css" />
     <Content Include="Content\agency.min.css" />
+    <Content Include="Content\alfacar.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
