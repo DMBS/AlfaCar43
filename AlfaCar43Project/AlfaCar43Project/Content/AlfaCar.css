@@ -1,0 +1,24 @@
+﻿body {
+}
+.heading-1 {
+    position: relative;
+    text-align: center
+}
+
+    .heading_behind_text:before {
+        content: "";
+        display: block;
+        border-top: 1px solid rgba(0,0,0,.1);
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        z-index: 0;
+    }
+
+    .heading_behind_text span {
+        background: #fff;
+        padding: 0 10px;
+        position: relative;
+        z-index: 1;
+    }

@@ -14,6 +14,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="~/Content/agency.min.css" rel="stylesheet">
+    <!-- Custom styles for AlfaCar-->
+    <link href="~/Content/alfacar.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 
@@ -22,7 +24,7 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Альфа Car43</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+                Меню
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -71,29 +73,37 @@
                 </div>
             </div>
             <!-- AlfaCar Carousel SlideShow-->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!--Carousel Wrapper-->
+            <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active">hello</li>
+                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="~/Content/Images/carousel/IMG_6928.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/Content/Images/carousel/IMG_6927.jpg" alt="Second slide">
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <!--First slide-->
+
+                    <img src="~/Content/Images/about/1.jpg" />
+                    <img src="~/Content/Images/about/2.jpg" />
+
+                    <!--/Third slide-->
                 </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
             </div>
+            <!--/.Carousel Wrapper-->
         </div>
     </section>
 
@@ -102,85 +112,10 @@
         @Html.Partial("About")
     </section>
 
-    <!--Our Advantages-->
+    <!--Advantages-->
     <Section class="bg-light" id="advantages">
-        <div class="container">
-            <div class="row text-md-center">
-                <div class="col-md-12" align="center">
-                    <div class="col-md-12" align="center">
-                        <h3>НАШИ ПРЕИМУЩЕСТВА:</h3>
-                    </div>
-                    <hr />
-                    <table>
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ЗНАНИЯ И ОПЫТ РАБОТ БОЛЕЕ 8 ЛЕТ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ИНДИВИДУАЛЬНЫЙ ПОДХОД К КАЖДОМУ КЛИЕНТУ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ВЫСОКОЕ КАЧЕСТВО ВЫПОЛНЕННЫХ РАБОТ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ПОКРАСКА В КАМЕРЕ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ЧЕСТНЫЕ ЦЕНЫ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ГАРАНТИЯ НА ВЫПОЛНЕННЫЕ РАБОТЫ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★СКИДКИ И БОНУСЫ КАЖДОМУ КЛИЕНТУ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ТОЛЬКО КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ВЫПОЛНЕНИЕ РАБОТ В КОРОТКИЕ СРОКИ</p>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★ПОДБОР ЗАПЧАСТЕЙ НОВЫХ И Б/У БЕЗ ВАШЕГО УЧАСТИЯ - БЕСПЛАТНО</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p class=" text-muted">★БЕСПЛАТНЫЕ КОНСУЛЬТАЦИИ И ОСМОТР АВТО</p>
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-</Section>
+        @Html.Partial("Advantages")
+    </Section>
 
     <!-- Contact -->
     <section id="contact">
@@ -230,8 +165,41 @@
     <!--Yandex Map-->
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adaa0f9e9bb17a8504ae61a8b05ca09c58577e4e948503130d9f1ef779837ee06&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
 
+
+
     <!-- Footer -->
     <footer>
+        <!--We are Based-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h5 class="heading_behind_text"><span>Мы находимся в городе Кирове, РФ</span></h5>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-location-arrow"></i>
+                    <p class="text-muted">ул. Ломоносова 5/1, Киров, РФ</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-phone"></i>
+                    <p class="text-muted" align="center">
+                        +7(8332)756-966
+                        <br />
+                        +7-953-687-62-26
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-clock"></i>
+                    <p class="text-muted">
+                        ПН-ПТ: 10:00 - 19:00
+                        <br />
+                        СБ:    10:00 - 15:00
+                        <br />
+                        ВС:    Выходной
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr />
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -257,19 +225,20 @@
                     </ul>
                 </div>
                 @*<div class="col-md-4">
-                            <ul class="list-inline quicklinks">
-                                <li class="list-inline-item">
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">Terms of Use</a>
-                                </li>
-                            </ul>
-                    </div>*@
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                </div>*@
             </div>
         </div>
     </footer>
 
+    <!--RenderBody-->
     <div>
         @RenderBody()
     </div>
@@ -282,9 +251,10 @@
     <script src="~/Scripts/jquery.easing.min.js"></script>
     <!-- Contact form JavaScript -->
     <script src="~/Scripts/jqBootstrapValidation.js"></script>
-    <script src="~/Scripts/contact_me.js"></script>
     <!-- Custom scripts for this template -->
     <script src="~/Scripts/agency.min.js"></script>
+
     @RenderSection("scripts", required: false)
+
 </body>
 </html>

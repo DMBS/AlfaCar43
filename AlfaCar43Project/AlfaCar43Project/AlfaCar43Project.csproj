@@ -143,6 +143,8 @@
     <Content Include="Content\Images\about\2.jpg" />
     <Content Include="Content\Images\about\3.jpg" />
     <Content Include="Content\Images\about\4.jpg" />
+    <Content Include="Content\Images\carousel\1.jpg" />
+    <Content Include="Content\Images\carousel\2.jpg" />
     <Content Include="Content\Images\carousel\AEIV1458.JPG" />
     <Content Include="Content\Images\carousel\HONU3640.JPG" />
     <Content Include="Content\Images\carousel\IMG_6791.JPG" />
@@ -174,6 +176,7 @@
     <Content Include="Content\Images\clients\7.jpg" />
     <Content Include="Content\Images\clients\8.jpg" />
     <Content Include="Content\Images\header-bg.jpg" />
+    <Content Include="Content\Images\icons\YellowStart.png" />
     <Content Include="Content\Images\logos\creative-market.jpg" />
     <Content Include="Content\Images\logos\designmodo.jpg" />
     <Content Include="Content\Images\logos\envato.jpg" />
@@ -3390,7 +3393,6 @@
     <Content Include="font-awesome\scss\_team.scss" />
     <Content Include="font-awesome\scss\_timeline.scss" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\contact_me.js" />
     <Content Include="Scripts\jqBootstrapValidation.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -3420,6 +3422,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Advantages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
