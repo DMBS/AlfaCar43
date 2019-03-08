@@ -3406,7 +3406,6 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Advantages.cshtml" />
     <Content Include="Views\Feedback\SendEmail.cshtml" />
-    <Content Include="Views\Feedback\SuccessSend.cshtml" />
     <Content Include="Views\Home\AlertSuccess.cshtml" />
   </ItemGroup>
   <ItemGroup>

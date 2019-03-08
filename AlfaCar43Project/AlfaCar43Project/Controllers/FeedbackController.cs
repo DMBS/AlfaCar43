@@ -48,9 +48,5 @@ namespace AlfaCar43Project.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult SuccessSend()
-        {
-            return View();
-        }
     }
 }
