@@ -29,3 +29,10 @@
     padding-left: 7px; 
     padding-right: 7px;
 }
+.alert-message{
+    opacity:1;
+    transition:opacity 500ms;
+}
+.alert-message.hide {
+    opacity:0;
+}

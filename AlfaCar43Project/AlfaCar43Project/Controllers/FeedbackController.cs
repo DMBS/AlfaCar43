@@ -16,7 +16,7 @@ namespace AlfaCar43Project.Controllers
         [HttpGet]
         public ActionResult SendEmail()
         {
-            return View(new FeedbackViewModel());
+            return View();
         }
 
         //POST: Связаться с нами
@@ -44,7 +44,13 @@ namespace AlfaCar43Project.Controllers
                 }
                 client.Send(mail);
             }
-            return Content("email sent", "text/plain");
+            TempData["Success"] = "Ваше сообщение успешно отправлено!";
+            return RedirectToAction("Index", "Home");
+        }
+
+        public ActionResult SuccessSend()
+        {
+            return View();
         }
     }
 }

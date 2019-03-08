@@ -46,6 +46,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RazorEngine, Version=3.10.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.10.0\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -3403,6 +3406,8 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Advantages.cshtml" />
     <Content Include="Views\Feedback\SendEmail.cshtml" />
+    <Content Include="Views\Feedback\SuccessSend.cshtml" />
+    <Content Include="Views\Home\AlertSuccess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

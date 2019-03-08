@@ -17,6 +17,7 @@
     <!-- Custom styles for AlfaCar-->
     <link href="~/Content/alfacar.css" rel="stylesheet" />
 </head>
+
 <body id="page-top">
 
     <!-- Navigation -->
@@ -68,6 +69,7 @@
     <!-- Header -->
     <header class="masthead">
         <div class="container">
+            @Html.Partial("~/Views/Home/AlertSuccess.cshtml")
             <div class="intro-text">
                 <div class="intro-heading text-uppercase">Альфа Car</div>
                 <div class="intro-lead-in">Кузовной ремонт автомобилей</div>
@@ -214,7 +216,7 @@
 
     <!-- Contact -->
     <section id="contact">
-       @Html.Partial("~/Views/Feedback/SendEmail.cshtml")
+        @Html.Partial("~/Views/Feedback/SendEmail.cshtml")
     </section>
 
     <!--Yandex Map-->
@@ -292,10 +294,8 @@
     </footer>
 
     <!--RenderBody-->
-    <div>
-        @RenderBody()
-    </div>
 
+    @RenderBody()
 
     <!-- Bootstrap core JavaScript -->
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>

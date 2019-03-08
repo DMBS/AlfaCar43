@@ -17,11 +17,9 @@ namespace AlfaCar43Project.Models
         public string Phone { get; set; }
 
         //почтовый адрес пользователя
-        [Required]
         public string Email { get; set; }
 
         //сообщение
-        [Required]
         public string Message { get; set; }
 
         //прилагаемые файлы
