@@ -17,7 +17,7 @@ namespace AlfaCar43Project.Models
         public string Phone { get; set; }
 
         //сообщение
-        
+        [Required]
         public string Message { get; set; }
 
         //прилагаемые файлы
