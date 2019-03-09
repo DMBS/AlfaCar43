@@ -31,10 +31,10 @@ namespace AlfaCar43Project.Controllers
             using (var client = new SmtpClient("smtp.gmail.com", 587))
             {
                 client.EnableSsl = true;
-                client.Credentials = new NetworkCredential("sp4002.04.03.2016@gmail.com", "podVYXaRuwoW");
+                client.Credentials = new NetworkCredential("alfacar43@gmail.com", "ae2485370");
                 var mail = new MailMessage();
-                mail.From = new MailAddress("sp4002.04.03.2016@gmail.com");
-                mail.To.Add("dmbsseller@gmail.com");
+                mail.From = new MailAddress("alfacar43@gmail.com");
+                mail.To.Add("alfacar43@gmail.com");
                 mail.Subject = string.Format("Вы получили письмо от посетителя сайта {0} c номером телефона {1}. Пора позвонить ему!", model.Name, model.Phone);
                 mail.Body = model.Message;
                 if (model.Attachment != null && model.Attachment.ContentLength > 0)
