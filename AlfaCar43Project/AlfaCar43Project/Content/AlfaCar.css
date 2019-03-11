@@ -37,3 +37,33 @@
 .alert-message.hide {
     opacity:0;
 }
+
+/* Adaptive design for different screen size for Bootstrap Carousel*/
+
+/* Adaptive for MOBILE DEVICES, small screens*/
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .carousel-item {
+        height: 100%;
+        width: 100%;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+}
+
+/* Adaptive for TABLET*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+}
+
+/* Adaptive for LARGE screens*/
+@media only screen and (min-width:1024px) {
+    .carousel-item {
+        height:80vh;
+        width: 100%;
+        text-align:center;
+    }
+    .carousel-inner img {
+        margin:0 auto
+    }
+}
