@@ -155,10 +155,10 @@
     <Content Include="Content\Images\carousel\1_pre_1.jpg" />
     <Content Include="Content\Images\carousel\2_after.JPG" />
     <Content Include="Content\Images\carousel\2_pre.JPG" />
-    <Content Include="Content\Images\carousel\4_after_1.JPG" />
-    <Content Include="Content\Images\carousel\4_after_2.JPG" />
-    <Content Include="Content\Images\carousel\4_pre_1.JPG" />
-    <Content Include="Content\Images\carousel\4_pre_2.JPG" />
+    <Content Include="Content\Images\carousel\3_after.JPG" />
+    <Content Include="Content\Images\carousel\4_after.JPG" />
+    <Content Include="Content\Images\carousel\3_pre.JPG" />
+    <Content Include="Content\Images\carousel\4_pre.JPG" />
     <Content Include="Content\Images\carousel\5.jpg" />
     <Content Include="Content\Images\carousel\6_after.jpg" />
     <Content Include="Content\Images\carousel\6_pre.jpg" />
