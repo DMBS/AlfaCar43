@@ -27,7 +27,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                @Html.TextBoxFor(x => x.Attachment, new { @class = "form-control", @title = "Пожалуйста, выберите изображение", @id = "file", @type = "file", @placeholder = "Выберите файл" })
+                                @Html.TextBoxFor(x => x.Attachments, new { @class = "form-control", @title = "Пожалуйста, выберите изображение", @id = "file", @type = "file", @placeholder = "Выберите файл", @multiple = "multiple" })
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

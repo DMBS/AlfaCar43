@@ -1,6 +1,7 @@
 ﻿using AlfaCar43Project.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -37,11 +38,15 @@ namespace AlfaCar43Project.Controllers
                 mail.To.Add("alfacar43@gmail.com");
                 mail.Subject = string.Format("Вы получили письмо от посетителя сайта {0} c номером телефона {1}. Пора позвонить ему!", model.Name, model.Phone);
                 mail.Body = model.Message;
-                if (model.Attachment != null && model.Attachment.ContentLength > 0)
+                foreach (HttpPostedFileBase attachment in model.Attachments)
                 {
-                    var attachment = new Attachment(model.Attachment.InputStream, model.Attachment.FileName);
-                    mail.Attachments.Add(attachment);
+                    if (attachment != null && attachment.ContentLength > 0)
+                    {
+                        string fileName = Path.GetFileName(attachment.FileName);
+                        mail.Attachments.Add(new Attachment(attachment.InputStream, fileName));
+                    }
                 }
+
                 client.Send(mail);
             }
             TempData["Success"] = "Ваше сообщение успешно отправлено!";

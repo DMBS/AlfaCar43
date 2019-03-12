@@ -21,6 +21,6 @@ namespace AlfaCar43Project.Models
         public string Message { get; set; }
 
         //прилагаемые файлы
-        public HttpPostedFileBase Attachment { get; set; }
+        public List<HttpPostedFileBase> Attachments { get; set; }
     }
 }
