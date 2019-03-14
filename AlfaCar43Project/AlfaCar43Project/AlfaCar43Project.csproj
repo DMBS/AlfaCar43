@@ -170,20 +170,11 @@
     <Content Include="Content\Images\carousel\9_paint_2.JPG" />
     <Content Include="Content\Images\carousel\9_paint_3.JPG" />
     <Content Include="Content\Images\clients\1.jpg" />
-    <Content Include="Content\Images\clients\10.jpg" />
-    <Content Include="Content\Images\clients\11.jpg" />
-    <Content Include="Content\Images\clients\1_1.jpg" />
-    <Content Include="Content\Images\clients\2.jpg" />
-    <Content Include="Content\Images\clients\3.jpg" />
     <Content Include="Content\Images\clients\4.jpg" />
     <Content Include="Content\Images\clients\5.jpg" />
+    <Content Include="Content\Images\clients\3.jpg" />
     <Content Include="Content\Images\clients\6.jpg" />
-    <Content Include="Content\Images\clients\6_1.jpg" />
-    <Content Include="Content\Images\clients\7.jpg" />
-    <Content Include="Content\Images\clients\8.jpg" />
-    <Content Include="Content\Images\clients\9.jpg" />
-    <Content Include="Content\Images\header-bg.jpg" />
-    <Content Include="Content\Images\icons\YellowStart.png" />
+    <Content Include="Content\Images\clients\2.jpg" />
     <Content Include="Content\Images\main\AlfaCar_MainImage.jpg" />
     <Content Include="Content\Images\main\black-paint.png" />
     <Content Include="Content\Images\map-image.png" />
@@ -3408,15 +3399,17 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Clientside.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Advantages.cshtml" />
     <Content Include="Views\Feedback\SendEmail.cshtml" />
-    <Content Include="Views\Home\AlertSuccess.cshtml" />
+    <Content Include="Views\Home\Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Components\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Interface\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

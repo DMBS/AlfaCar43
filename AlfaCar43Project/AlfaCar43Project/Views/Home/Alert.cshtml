@@ -1,0 +1,33 @@
+﻿@{
+    if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success" style="padding:0px">
+            <strong>Ваше сообщение успешно отправлено!</strong> Мы обязательно свяжемся с вами!
+        </div>
+
+        <script type="text/javascript">
+            window.setTimeout(function () {
+                $(".alert-success").fadeTo(500, 0).slideUp(500, function () {
+                    $(this).remove();
+                });
+            }, 5000);
+        </script>
+    }
+
+    else if (TempData["Danger"] != null)
+    {
+        <div class="alert alert-danger" style="padding:0px">
+            <strong>В ходе отправки сообщения произошла ошибка!</strong>
+        </div>
+
+        <script type="text/javascript">
+            window.setTimeout(function () {
+                $(".alert-danger").fadeTo(500, 0).slideUp(500, function () {
+                    $(this).remove();
+                });
+            }, 5000);
+        </script>
+    }
+}
+
+

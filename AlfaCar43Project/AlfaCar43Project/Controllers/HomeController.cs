@@ -22,6 +22,7 @@ namespace AlfaCar43Project.Controllers
         {
             return RedirectToAction("Index");
         }
+
         public ActionResult Advantages()
         {
             return RedirectToAction("Index");

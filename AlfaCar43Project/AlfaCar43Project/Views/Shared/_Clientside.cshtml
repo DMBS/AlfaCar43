@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
+    <!-- Navigation Navbar panel-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Альфа Car43</a>
@@ -73,7 +74,7 @@
     <!-- Header -->
     <header class="masthead">
         <div class="container">
-            @Html.Partial("~/Views/Home/AlertSuccess.cshtml")
+            @Html.Partial("~/Views/Home/Alert.cshtml")
             <div class="intro-text">
                 <div class="intro-heading text-uppercase">Альфа Car</div>
                 <div class="intro-lead-in">Кузовной ремонт автомобилей</div>
@@ -225,11 +226,11 @@
         @Html.Partial("~/Views/Home/Advantages.cshtml")
     </Section>
 
-    <!-- Contact -->
+    <!-- Feedback Form -->
     <section id="contact">
         @Html.Partial("~/Views/Feedback/SendEmail.cshtml")
     </section>
-
+    
     <!--Yandex Map-->
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adaa0f9e9bb17a8504ae61a8b05ca09c58577e4e948503130d9f1ef779837ee06&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
 
@@ -290,7 +291,6 @@
     </footer>
 
     <!--RenderBody-->
-
     @RenderBody()
 
     <!-- Bootstrap core JavaScript -->
@@ -305,8 +305,8 @@
     <!--Validation-->
     <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
-
     @RenderSection("scripts", required: false)
 
 </body>
+
 </html>

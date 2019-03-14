@@ -6,6 +6,9 @@ using System.Web;
 
 namespace AlfaCar43Project.Models
 {
+    /// <summary>
+    /// Модель отображения формы обратной связи
+    /// </summary>
     public class FeedbackViewModel
     {
         //имя пользователя

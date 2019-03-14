@@ -24,34 +24,40 @@ namespace AlfaCar43Project.Controllers
         [HttpPost]
         public ActionResult SendEmail(FeedbackViewModel model)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(model);
-            }
-
-            using (var client = new SmtpClient("smtp.gmail.com", 587))
-            {
-                client.EnableSsl = true;
-                client.Credentials = new NetworkCredential("alfacar43@gmail.com", "ae2485370");
-                var mail = new MailMessage();
-                mail.From = new MailAddress("alfacar43@gmail.com");
-                mail.To.Add("alfacar43@gmail.com");
-                mail.Subject = string.Format("Вы получили письмо от посетителя сайта {0} c номером телефона {1}. Пора позвонить ему!", model.Name, model.Phone);
-                mail.Body = model.Message;
-                foreach (HttpPostedFileBase attachment in model.Attachments)
+                try
                 {
-                    if (attachment != null && attachment.ContentLength > 0)
+                    var client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true;
+                    client.Credentials = new NetworkCredential("alfacar43@gmail.com", "ae2485370");
+                    var mail = new MailMessage();
+                    mail.From = new MailAddress("alfacar43@gmail.com");
+                    mail.To.Add("alfacar43@gmail.com");
+                    mail.Subject = string.Format("Вы получили письмо от посетителя сайта {0} c номером телефона {1}. Пора позвонить ему!", model.Name, model.Phone);
+                    mail.Body = model.Message;
+                    foreach (HttpPostedFileBase attachment in model.Attachments)
                     {
-                        string fileName = Path.GetFileName(attachment.FileName);
-                        mail.Attachments.Add(new Attachment(attachment.InputStream, fileName));
+                        if (attachment != null && attachment.ContentLength > 0)
+                        {
+                            string fileName = Path.GetFileName(attachment.FileName);
+                            mail.Attachments.Add(new Attachment(attachment.InputStream, fileName));
+                        }
                     }
+
+                    client.Send(mail);
+                    ModelState.Clear();
+                    TempData["Success"] = "Ваше сообщение успешно отправлено!";
                 }
 
-                client.Send(mail);
+                catch (Exception)
+                {
+                    ModelState.Clear();
+                    TempData["Danger"] = "В ходе отправки сообщения произошла ошибка!";
+                }
             }
-            TempData["Success"] = "Ваше сообщение успешно отправлено!";
+
             return RedirectToAction("Index", "Home");
         }
-
-    }
+    }   
 }
