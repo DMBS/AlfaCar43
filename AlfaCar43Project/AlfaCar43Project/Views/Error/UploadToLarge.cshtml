@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap core CSS -->
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template -->
+        <link href="~/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <!-- Custom styles for this template -->
+        <link href="~/Content/agency.min.css" rel="stylesheet">
+        <!-- Custom styles for AlfaCar-->
+        <link href="~/Content/alfacar.css" rel="stylesheet" />
+    </head>
+<body>
+    <section id="error">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="~/Content/Images/error/homer_error.png" width="180" height="300" />
+                </div>
+                <div class="col-md-6 " style=" padding : 100px">
+                    <div class="text-danger"><h3>Ошибка 404.13 </h3></div>
+                    <br />
+                    <div class="text-muted">Превышен максимально допустимый размер загружаемых файлов (10 мегабайт)!  Вернитесь назад и повторите попытку</div>
+                    <div>@Html.ActionLink("Вернуться назад", "Index", "Home")</div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
