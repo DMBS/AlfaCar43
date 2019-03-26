@@ -1,11 +1,6 @@
 ﻿using AlfaCar43Project.Models;
+using AlfaCar43Project.Components;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using System.Web;
 using System.Web.Mvc;
 
 namespace AlfaCar43Project.Controllers
@@ -28,24 +23,8 @@ namespace AlfaCar43Project.Controllers
             {
                 try
                 {
-                    var client = new SmtpClient("smtp.gmail.com", 587);
-                    client.EnableSsl = true;
-                    client.Credentials = new NetworkCredential("alfacar43@gmail.com", "ae2485370");
-                    var mail = new MailMessage();
-                    mail.From = new MailAddress("alfacar43@gmail.com");
-                    mail.To.Add("alfacar43@gmail.com");
-                    mail.Subject = string.Format("Вы получили письмо от посетителя сайта {0} c номером телефона {1}. Пора позвонить ему!", model.Name, model.Phone);
-                    mail.Body = model.Message;
-                    foreach (HttpPostedFileBase attachment in model.Attachments)
-                    {
-                        if (attachment != null && attachment.ContentLength > 0)
-                        {
-                            string fileName = Path.GetFileName(attachment.FileName);
-                            mail.Attachments.Add(new Attachment(attachment.InputStream, fileName));
-                        }
-                    }
-
-                    client.Send(mail);
+                    SendEmail_GMAIL o = new SendEmail_GMAIL();
+                    o.SendEmail(model);
                     ModelState.Clear();
                     TempData["Success"] = "Ваше сообщение успешно отправлено!";
                 }
@@ -59,5 +38,6 @@ namespace AlfaCar43Project.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
     }   
 }

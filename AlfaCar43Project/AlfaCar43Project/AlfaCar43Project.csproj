@@ -129,6 +129,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Components\SendEmailsBase.cs" />
+    <Compile Include="Components\SendEmail_GMAIL.cs" />
+    <Compile Include="Components\SendEmail_MAIL.cs" />
+    <Compile Include="Components\SendEmail_YANDEX.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
